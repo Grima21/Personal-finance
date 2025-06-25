@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Summary from "./components/Summary";
 import Form from "./components/Form";
-import Charts from "./components/charts";
+import Charts from "./components/Charts";
 import styles from "./App.module.css"; // Usando CSS Modules
 import Transactions from "./components/Transactions";
 function App() {
