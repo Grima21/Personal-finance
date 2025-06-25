@@ -1,0 +1,50 @@
+.summary {
+  max-width: 904px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* padding: 1rem; */
+  margin: 0 auto 1rem auto;
+}
+
+.card {
+  width: 296px;
+  height: 100px;
+  background-color: #ffff;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 10px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.title h3 {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+.title img {
+  width: 20px;
+}
+.numberGreen {
+  color: #16a34a;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.numberRed {
+  color: #dc2626;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
