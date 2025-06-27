@@ -1,12 +1,69 @@
-# React + Vite
+# 💰 Personal Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web interactiva para gestionar tus ingresos, gastos y visualizar estadísticas mensuales y por categoría.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**
+- **Firebase Firestore** (para persistencia en la nube)
+- **CSS Modules** (estilización modular)
+- **Recharts** (gráficas dinámicas)
 
-## Expanding the ESLint configuration
+## 🔥 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Agregar ingresos y gastos con descripción, monto, tipo y categoría
+- Visualización de balance actual
+- Filtro por mes y categoría
+- Gráfica mensual y por categoría de gastos
+- Transacciones recientes ordenadas por fecha
+- Conexión en tiempo real con Firebase Firestore
+
+## 📦 Instalación
+
+## 🧠 Próximas Mejoras
+
+- Autenticación con Firebase Auth 🔐
+
+- Soporte para múltiples usuarios
+
+- Exportar reportes en PDF
+
+- Dark mode 🌙
+
+```bash
+git clone https://github.com/Grima21/finance-dashboard.git
+cd finance-dashboard
+npm install
+npm run dev
+
+📦src
+ ┣ 📂components
+ ┃ ┣ 📄Charts.jsx
+ ┃ ┣ 📄Form.jsx
+ ┃ ┣ 📄Hero.jsx
+ ┃ ┣ 📄Summary.jsx
+ ┃ ┣ 📄Transactions.jsx
+ ┃ ┗ 📄Header.jsx
+ ┣ 📄App.jsx
+ ┣ 📄firebaseConfig.js
+ ┗ 📄main.jsx
+
+
+proximas_mejoras:
+  - Autenticación con Firebase Auth 🔐
+  - Soporte para múltiples usuarios
+  - Exportar reportes en PDF
+  - Dark mode 🌙
+
+deploy:
+  url: "https://personal-finance-rosy.vercel.app/"
+
+capturas:
+  - "public/assets/preview1.png"
+  - "public/assets/preview2.png"
+
+autor:
+  nombre: "Grimaldo Sánchez"
+
+
+```
