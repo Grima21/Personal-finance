@@ -11,6 +11,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import styles from "./Charts.module.css";
+// import React from "react";
 
 export default function Charts({ dataMensual, dataCategoria }) {
   const colores = [
@@ -27,36 +28,40 @@ export default function Charts({ dataMensual, dataCategoria }) {
     <section className={styles.chartsSection}>
       <div className={styles.card}>
         <h3 className={styles.title}>Ingresos vs Gastos</h3>
-        <ResponsiveContainer width="100%" height={250}>
-          <BarChart data={dataMensual}>
-            <XAxis dataKey="mes" />
-            <YAxis />
-            <Tooltip />
-            <Bar dataKey="ingresos" fill="#16a34a" />
-            <Bar dataKey="gastos" fill="#dc2626" />
-          </BarChart>
-        </ResponsiveContainer>
+        {dataMensual.length > 0 && (
+          <ResponsiveContainer width="100%" height={250}>
+            <BarChart data={dataMensual}>
+              <XAxis dataKey="mes" />
+              <YAxis />
+              <Tooltip />
+              <Bar dataKey="ingreso" fill="#16a34a" />
+              <Bar dataKey="gasto" fill="#dc2626" />
+            </BarChart>
+          </ResponsiveContainer>
+        )}
       </div>
 
       <div className={styles.card}>
         <h3 className={styles.title}>Gastos por Categoría</h3>
-        <ResponsiveContainer width="100%" height={250}>
-          <PieChart>
-            <Pie
-              data={dataCategoria}
-              dataKey="valor"
-              nameKey="categoria"
-              innerRadius={60}
-              outerRadius={100}
-              label
-            >
-              {dataCategoria.map((_, i) => (
-                <Cell key={i} fill={colores[i % colores.length]} />
-              ))}
-            </Pie>
-            <Tooltip />
-          </PieChart>
-        </ResponsiveContainer>
+        {dataCategoria.length > 0 && (
+          <ResponsiveContainer width="100%" height={250}>
+            <PieChart>
+              <Pie
+                data={dataCategoria}
+                dataKey="gasto"
+                nameKey="categoria"
+                innerRadius={60}
+                outerRadius={100}
+                label
+              >
+                {dataCategoria.map((_, i) => (
+                  <Cell key={i} fill={colores[i % colores.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
+        )}
       </div>
     </section>
   );

@@ -1,14 +1,12 @@
 import styles from "./Hero.module.css";
-import { useState } from "react";
-import { MESES, CATEGORIAS, TIPOS } from "./data";
+import { MESES, CATEGORIAS } from "./data";
 
-export default function Hero() {
-  // Importa los estilos si no lo has hecho aún
-
-  const [mesSeleccionado, setMesSeleccionado] = useState(MESES[0]);
-  const [categoriaSeleccionado, setCategoriaSeleccionado] = useState(
-    CATEGORIAS[0]
-  );
+export default function Hero({
+  mesSeleccionado,
+  setMesSeleccionado,
+  categoriaSeleccionada,
+  setCategoriaSeleccionada,
+}) {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -35,13 +33,13 @@ export default function Hero() {
         </div>
         <div className={styles.itemHero}>
           <label className={styles.labelHero} htmlFor="categoria-select">
-            Categoria
+            Categoría
           </label>
           <select
             id="categoria-select"
             className={styles.selectHero}
-            value={categoriaSeleccionado}
-            onChange={(e) => setCategoriaSeleccionado(e.target.value)}
+            value={categoriaSeleccionada}
+            onChange={(e) => setCategoriaSeleccionada(e.target.value)}
           >
             {CATEGORIAS.map((categoria) => (
               <option key={categoria} value={categoria}>

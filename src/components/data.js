@@ -2,7 +2,6 @@ export const MESES = [
   "Enero",
   "Febrero",
   "Marzo",
-  "Abril",
   "Mayo",
   "Junio",
   "Julio",
@@ -14,6 +13,7 @@ export const MESES = [
 ];
 
 export const CATEGORIAS = [
+  "Todas",
   "Alimentación",
   "Transporte",
   "Vivienda",
