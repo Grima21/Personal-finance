@@ -54,8 +54,10 @@ deploy:
   url: "https://personal-finance-rosy.vercel.app/"
 
 capturas:
-  - "public/assets/preview1.png"
-  - "public/assets/preview2.png"
+  - "![preview2](https://github.com/user-attachments/assets/f57575e5-634a-4dde-a5d0-1072629f8146)
+"
+  - "![preview1](https://github.com/user-attachments/assets/1b448851-a51c-4e13-a36a-19fda1ffa293)
+"
 
 autor:
   nombre: "Grimaldo Sánchez"
