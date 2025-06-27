@@ -31,11 +31,6 @@ Una aplicación web interactiva para gestionar tus ingresos, gastos y visualizar
 - Dark mode 🌙
 
 ```bash
-git clone https://github.com/Grima21/finance-dashboard.git
-cd finance-dashboard
-npm install
-npm run dev
-
 📦src
  ┣ 📂components
  ┃ ┣ 📄Charts.jsx
