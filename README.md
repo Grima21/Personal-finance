@@ -30,7 +30,7 @@ Una aplicación web interactiva para gestionar tus ingresos, gastos y visualizar
 
 - Dark mode 🌙
 
-```bash
+##bash
 📦src
  ┣ 📂components
  ┃ ┣ 📄Charts.jsx
